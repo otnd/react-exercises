@@ -1,6 +1,8 @@
+import { SelectLanguage } from "./components/SelectLanguage";
+
 function App() {
   return (
-    
+    <SelectLanguage/>
   );
 }
 
