@@ -1,7 +1,14 @@
-function App() {
-  return (
-    
-  );
+import Hello from './components/Hello';
+import React from 'react';
+
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <Hello />
+      </div>
+    );
+  }
 }
 
 export default App;

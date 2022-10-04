@@ -8,3 +8,7 @@ root.render(
     <App />
   </React.StrictMode>
 );
+
+///***DEPRECATED***///
+// const root = document.querySelector('#root')
+// ReactDOM.render(<App/>, root)
