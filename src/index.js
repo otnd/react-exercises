@@ -1,10 +1,9 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
+import { counterReducer } from "./state/CounterState";
+import { legacy_createStore as createStore } from "redux";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+const store = createStore(counterReducer)
+store.subscribe(() => console.log(store.getState()))
+
+store.dispatch({ type: 'COUNTER@INCREMENT', payload: 1 })
+store.dispatch({ type: 'COUNTER@DECREMENT', payload: 1 })
+store.dispatch({ type: 'COUNTER@RESET' })
