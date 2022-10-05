@@ -1,6 +1,8 @@
+import ClickCounter from "./components/ClickCounter";
+
 function App() {
   return (
-    
+    <ClickCounter/>
   );
 }
 
