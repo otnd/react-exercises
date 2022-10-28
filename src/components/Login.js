@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 
-function Login(props) {
-    const [loginData, setData] = useState({
+function Login() {
+    const [loginData, setLoginData] = useState({
         user: '',
         password: '',
         remember: false
     })
 
     function handleInputChange(e) {
-        setData(data => ({
+        setLoginData(data => ({
             ...data,
             [e.target.name]: e.target.type === 'checkbox' ? e.target.checked : e.target.value,
         }))
